@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 class TwITAM:
     def __init__(self, data_path):
         self.data_path = data_path
-        self.auth = tweepy.OAuth2BearerHandler("AAAAAAAAAAAAAAAAAAAAAPXBaQEAAAAAdkCJ2DPJdlXod0Y4dSG9CtJUqCE%3Dt2ezG3CNPpHGj7Lb692Vgq8gkAq4Sfkof3ZzcOHSr38ppE45rq")
+        self.auth = tweepy.OAuth2BearerHandler(None)
         self.tweet_gate = tweepy.API(self.auth)
         self.query = '(ITAM OR @ITAM_mx OR #ITAM)'
         self.accounts_ITAM = ['ITAM_mx','DAE_ITAM','EconomiaITAM','RRII_ITAM','CPoliticaITAM','ITAM_Biblioteca','ITAMMusica','DataAlgoSocITAM','EstadisticaITAM','Derecho_ITAM','IntercambioITAM','CDA_ITAM','IngenieriaITAM','ITAMuniversity','AspirantesITAM','DiplomadosITAM','PosgradosITAM','ExITAM','EnergiaITAM']
